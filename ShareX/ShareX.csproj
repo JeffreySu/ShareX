@@ -1157,6 +1157,9 @@
     <None Include="Resources\image.png" />
     <None Include="Resources\application-browser.png" />
     <None Include="Resources\gear.png" />
+    <None Include="ShareX.exe.manifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

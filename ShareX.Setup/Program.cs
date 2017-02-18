@@ -213,6 +213,9 @@ namespace ShareX.Setup
             Helpers.CopyFiles(releaseDirectory, "*.dll", destination);
             Helpers.CopyFiles(Path.Combine(ParentDir, "Licenses"), "*.txt", Path.Combine(destination, "Licenses"));
 
+            //add manifest file
+            Helpers.CopyFile(Path.Combine(releaseDirectory, "ShareX.exe.manifest"), destination);
+
             if (!File.Exists(RecorderDevicesSetupPath))
             {
                 CompileISSFile("Recorder-devices-setup.iss");
